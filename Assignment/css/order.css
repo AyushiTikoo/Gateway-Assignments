@@ -1,0 +1,118 @@
+body {
+  font-family: "Playlist-script";
+  transition: background-color .5s;
+}
+
+#j1{
+    animation: mymove 5s infinite;
+}
+.table-a tr:nth-child(2n+1) td {
+  background: #fcfcfc;
+}
+.table-a td, .table-a th {
+  width: 33%;
+}
+.table-a td {
+  font-family: 'Open Sans';
+  padding: 12px 14px 12px 14px;
+  font-size: 13px;
+  color: #6b7373;
+}
+
+.table-a th { 
+  font-weight: 600;
+  padding: 13px 14px 13px 14px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #2f3341;
+  text-align: center;
+}
+
+.table-a th, .table-a td {
+  border: 1px solid #e6e6e6;
+  font-family: 'Raleway';
+  text-align:center; 
+}
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
+}
+.table-a {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+u
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+.typography {
+  font-family: 'Raleway';
+  padding-bottom: 104px;
+}
+body, td {
+  font: 14px Arial, sans-serif;
+  color: #000;
+}
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+html, body, img, form {
+  margin: 0px;
+  padding: 0px;
+  border: #2f3341;
+  letter-spacing: normal;
+}
+
+.sidenav {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url(Images/sidenav.jpg);
+  background-repeat: no-repeat;
+  background-size:auto; 
+  background-position: bottom ;
+  background-color: #111; 
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
