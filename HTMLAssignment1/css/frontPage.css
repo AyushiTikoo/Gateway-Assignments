@@ -1,0 +1,89 @@
+body {
+    position: relative; 
+    font-family: "cursive";
+    background-color: black;
+}
+.bg-dark{
+    background: black !important;
+}
+#glow {
+    font-size: 60px;
+    color: #fff;
+    margin-left:90px;
+  }
+  .carousel-caption{
+      top:50%;
+      transform: translateY(-50%);
+      bottom:initial !important;
+      background:rgba(0,0,0,0.4);
+      max-width:600px;
+      position: absolute !important;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  #location{
+        position: relative;
+        text-align: center;
+        color: black;
+  }
+  .content{
+    position: absolute;
+    top: 100px;
+    right:40px;
+    /* font-family:"algerian"; */
+    font-size:80px;
+  }
+  #c1 {
+    position: relative;
+    width:25%;
+  }
+  
+  #Limage {
+    display: block;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:20px 20px 50px black;
+    
+  }
+  
+  #t1 {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 250px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left:30px ;
+  }
+  
+  #c1:hover #t1 {
+    opacity: 1;
+  }
+  ::-webkit-scrollbar{
+      width:16px;
+  }
+  ::-webkit-scrollbar-thumb{
+      background: linear-gradient(#000,#74777c);
+      border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track{
+      border-radius: 10px;
+      background: #f5f5f5;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+  }
+  i.fas{
+    line-height: 30px;
+    text-indent: 80px;
+    font-size:20px;
+  }
+ 
