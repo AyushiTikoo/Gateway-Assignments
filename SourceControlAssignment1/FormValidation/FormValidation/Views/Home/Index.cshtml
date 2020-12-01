@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "User Details";
+}
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<style>
+    td{
+        padding:10px;
+    }
+    b{
+        padding-right:5px;
+    }
+</style>
+@model FormValidation.Models.UserModel
+<div class="row">
+    <div class="col-sm-8">
+        <h2>Enter Details</h2>
+        @using (Html.BeginForm("UserDetails", "Home", FormMethod.Post))
+        {
+    <table>
+        <tr>
+            <td>@Html.LabelFor(m => m.Name)</td>
+            <td>@Html.TextBoxFor(m => m.Name)</td>
+            <td style="color: red">@Html.ValidationMessageFor(m => m.Name)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Email)</td>
+            <td>@Html.TextBoxFor(m => m.Email)</td>
+            <td style="color: red">@Html.ValidationMessageFor(m => m.Email)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.ConfirmEmail)</td>
+            <td>@Html.TextBoxFor(m => m.ConfirmEmail)</td>
+            <td style="color: red">@Html.ValidationMessageFor(m => m.ConfirmEmail)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Age)</td>
+            <td>@Html.TextBoxFor(m => m.Age)</td>
+            <td style="color: red">@Html.ValidationMessageFor(m => m.Age)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Mobile)</td>
+            <td>@Html.TextBoxFor(m => m.Mobile)</td>
+            <td style="color: red">@Html.ValidationMessageFor(m => m.Mobile)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Password)</td>
+            <td>@Html.PasswordFor(m => m.Password)</td>
+            <td style="color: red">@Html.ValidationMessageFor(m => m.Password)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.ConfirmPassword)</td>
+            <td>@Html.PasswordFor(m => m.ConfirmPassword)</td>
+            <td style="color: red">@Html.ValidationMessageFor(m => m.ConfirmPassword)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Address)</td>
+            <td>@Html.TextAreaFor(m => m.Address)</td>
+            <td style="color: red">@Html.ValidationMessageFor(m => m.Address)</td>
+        </tr>
+    </table>
+            <input type="submit" value="Save User Details" />
+        }
+    </div>
+    <div class="col-sm-4">
+        <h2>Your Details</h2><br/>
+                             <h4>
+
+                                 <b>Name:</b>    @ViewBag.name<br /><br />
+                                 <b>Email:</b>   @ViewBag.email<br /><br />
+                                 <b>Age:</b>     @ViewBag.age<br /><br />
+                                 <b>Mobile:</b>  @ViewBag.mobile<br /><br />
+                                 <b>Password:</b>@ViewBag.password<br /><br />
+                                 <b>Address:</b> @ViewBag.address
+                             </h4>
+    </div>
+</div>
