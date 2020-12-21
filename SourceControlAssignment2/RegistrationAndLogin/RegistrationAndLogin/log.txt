@@ -1,0 +1,55 @@
+ERROR 2020-12-19 20:14:55,363   438ms HomeController         Login              - ERROR MESSAGE
+DEBUG 2020-12-19 20:14:55,402   476ms HomeController         Login              - DEBUG MESSAGE
+INFO  2020-12-19 20:45:39,701   428ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 20:45:49,498 10225ms HomeController         Registration       - Registration Page Started
+INFO  2020-12-19 20:46:35,383 56109ms HomeController         IsEmailExist       - Email Exists
+INFO  2020-12-19 20:46:44,585 65312ms HomeController         ificationLinkEmail - Email verification sent
+INFO  2020-12-19 20:46:44,589 65315ms HomeController         Registration       - Data Saved to Database successfully
+INFO  2020-12-19 20:51:21,001 341727ms HomeController         VerifyAccount      - Account Verified
+INFO  2020-12-19 20:51:23,774 344501ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 20:51:43,967 364694ms HomeController         Logout             - Logout done
+INFO  2020-12-19 20:51:43,979 364706ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 20:51:52,059 372785ms HomeController         Logout             - Logout done
+INFO  2020-12-19 20:51:52,069 372795ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 20:55:31,463   212ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 20:55:45,003 13752ms HomeController         Logout             - Logout done
+INFO  2020-12-19 20:55:45,011 13760ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 20:55:56,195 24944ms HomeController         Logout             - Logout done
+INFO  2020-12-19 20:55:56,203 24952ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 20:57:55,116   429ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 20:58:11,935 17248ms HomeController         Logout             - Logout done
+INFO  2020-12-19 20:58:11,945 17258ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 21:11:18,135   321ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 21:11:33,806 15992ms HomeController         Logout             - Logout done
+INFO  2020-12-19 21:11:33,816 16002ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 21:11:40,556 22742ms HomeController         Logout             - Logout done
+INFO  2020-12-19 21:11:40,565 22751ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 21:13:01,013   746ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 21:13:46,335 46068ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 21:17:46,834   412ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 21:18:05,530 19108ms HomeController         Logout             - Logout done
+INFO  2020-12-19 21:18:05,538 19116ms HomeController         Login              - Login Page Started
+INFO  2020-12-19 21:18:15,390 28968ms HomeController         Registration       - Registration Page Started
+INFO  2020-12-19 21:18:20,099 33677ms HomeController         Login              - Login Page Started
+INFO  2020-12-20 13:53:55,175   478ms HomeController         Login              - Login Page Started
+INFO  2020-12-20 13:54:26,478 31781ms HomeController         Logout             - Logout done
+INFO  2020-12-20 13:54:26,487 31790ms HomeController         Login              - Login Page Started
+INFO  2020-12-20 13:54:29,934 35237ms HomeController         Login              - Login Page Started
+INFO  2020-12-20 13:55:59,581   256ms HomeController         Login              - Login Page Started
+INFO  2020-12-20 13:56:51,761   251ms HomeController         Login              - Login Page Started
+INFO  2020-12-20 13:57:22,835 31325ms HomeController         Logout             - Logout done
+INFO  2020-12-20 13:57:22,843 31333ms HomeController         Login              - Login Page Started
+INFO  2020-12-20 13:59:51,365   229ms HomeController         Login              - Login Page Started
+INFO  2020-12-20 14:00:14,101 22965ms HomeController         Logout             - Logout done
+INFO  2020-12-20 14:00:14,110 22974ms HomeController         Login              - Login Page Started
+INFO  2020-12-21 11:38:17,079   458ms HomeController         Login              - Login Page Started
+INFO  2020-12-21 11:38:27,067 10446ms HomeController         Registration       - Registration Page Started
+INFO  2020-12-21 11:39:39,946 83325ms HomeController         IsEmailExist       - Email Exists
+INFO  2020-12-21 11:39:47,178 90557ms HomeController         ificationLinkEmail - Email verification sent
+INFO  2020-12-21 11:39:47,180 90559ms HomeController         Registration       - Data Saved to Database successfully
+INFO  2020-12-21 11:47:42,013 565392ms HomeController         VerifyAccount      - Account Verified
+INFO  2020-12-21 11:49:16,807 660186ms HomeController         Login              - Login Page Started
+INFO  2020-12-21 11:51:39,428 802807ms HomeController         Logout             - Logout done
+INFO  2020-12-21 11:51:39,437 802816ms HomeController         Login              - Login Page Started
+INFO  2020-12-21 11:51:42,923 806302ms HomeController         Login              - Login Page Started
+INFO  2020-12-21 11:51:45,857 809236ms HomeController         Login              - Login Page Started

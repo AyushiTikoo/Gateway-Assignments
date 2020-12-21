@@ -1,0 +1,33 @@
+﻿
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <fieldset style="max-width: 600px; margin: auto;">
+
+
+            @if (Session["UserID"] != null)
+            {
+                <text>
+                    <h1><b>Welcome @Session["FirstName"].ToString(),Your Details-</b></h1><br />
+
+                    <b>FIRST NAME: </b>@Session["FirstName"].ToString()<br /><br />
+                    <b>LAST NAME: </b>@Session["LastName"].ToString()<br /><br />
+                    <b>EMAIL ID: </b>@Session["EmailID"].ToString()<br /><br />
+                    <b>DATE OF BIRTH: </b>@Session["DateOfBirth"].ToString()<br /><br />
+                    <b>MOBILE NUMBER: </b>@Session["Mobile"].ToString()<br /><br />
+                </text>
+
+                using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
+                {
+                    <a href="javascript:document.getElementById('logoutForm').submit()"><h4><b>LOGOUT</b></h4></a>
+                }
+
+            }
+            else
+            {
+                Response.Redirect(Url.Action("Login", "User"));
+            }
+        </fieldset>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
