@@ -1,0 +1,237 @@
+INFO  2021-01-11 17:21:34,475   393ms HomeController         Login              - Login Page Started
+INFO  2021-01-11 17:21:49,746 15664ms HomeController         Index              - Application started
+INFO  2021-01-11 17:21:52,971 18889ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:21:52,976 18894ms HomeController         Product            - Sorting of products
+INFO  2021-01-11 17:21:57,207 23125ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:21:57,208 23126ms HomeController         Product            - Sorting of products
+INFO  2021-01-11 17:22:01,892 27810ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:22:01,893 27811ms HomeController         Product            - Sorting of products
+INFO  2021-01-11 17:22:05,659 31577ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:22:05,661 31579ms HomeController         Product            - Sorting of products
+INFO  2021-01-11 17:34:02,460   394ms HomeController         Login              - Login Page Started
+INFO  2021-01-11 17:34:16,880 14814ms HomeController         Index              - Application started
+INFO  2021-01-11 17:34:19,404 17338ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:34:19,407 17342ms HomeController         Product            - Sorting of products
+INFO  2021-01-11 17:34:23,754 21688ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:34:23,755 21689ms HomeController         Product            - Sorting of products
+INFO  2021-01-11 17:34:27,696 25630ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:34:27,698 25632ms HomeController         Product            - Sorting of products
+INFO  2021-01-11 17:34:30,069 28003ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:34:30,070 28004ms HomeController         Product            - Sorting of products
+INFO  2021-01-11 17:52:51,524   557ms HomeController         Login              - Login Page Started
+INFO  2021-01-11 17:53:04,972 14005ms HomeController         Index              - Application started
+ERROR 2021-01-11 17:53:50,546 59579ms HomeController         Create             - Error occured- 
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at MVCAssignment.Controllers.HomeController.Create(Product p) in D:\MVC_Tutorial\MVCAssignment\MVCAssignment\Controllers\HomeController.cs:line 166
+INFO  2021-01-11 17:56:25,982  2329ms HomeController         Login              - Login Page Started
+INFO  2021-01-11 17:59:06,079   344ms HomeController         Login              - Login Page Started
+INFO  2021-01-11 17:59:17,522 11787ms HomeController         Index              - Application started
+INFO  2021-01-11 17:59:19,640 13905ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:59:19,642 13907ms HomeController         Product            - Sorting of products
+ERROR 2021-01-11 17:59:44,609 38874ms HomeController         Create             - Error occured- 
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at MVCAssignment.Controllers.HomeController.Create(Product p) in D:\MVC_Tutorial\MVCAssignment\MVCAssignment\Controllers\HomeController.cs:line 166
+INFO  2021-01-11 17:59:52,635 46900ms HomeController         Product            - Searching of products
+INFO  2021-01-11 17:59:52,636 46901ms HomeController         Product            - Sorting of products
+ERROR 2021-01-11 18:00:41,245 95510ms HomeController         Create             - Error occured- 
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at MVCAssignment.Controllers.HomeController.Create(Product p) in D:\MVC_Tutorial\MVCAssignment\MVCAssignment\Controllers\HomeController.cs:line 166
+INFO  2021-01-11 18:00:48,957 103222ms HomeController         Product            - Searching of products
+INFO  2021-01-11 18:00:48,958 103223ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:07:07,777  1417ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 12:07:22,412 16052ms HomeController         Index              - Application started
+INFO  2021-01-12 12:07:28,240 21879ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:07:28,245 21884ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:07:33,767 27407ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:07:33,769 27408ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:07:39,024 32664ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:07:39,025 32665ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:07:42,321 35960ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:07:42,323 35962ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:07:44,132 37772ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:07:44,137 37777ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:07:45,988 39628ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:07:45,989 39629ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:07:50,426 44066ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:07:50,427 44067ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:07:55,207 48846ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:07:55,208 48847ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:07:58,688 52328ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:07:58,688 52328ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:00,451 54091ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:00,452 54092ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:03,519 57159ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:03,520 57160ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:09,576 63216ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:09,577 63217ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:17,452 71092ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:17,453 71093ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:20,601 74240ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:20,601 74241ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:31,282 84922ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:31,283 84923ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:34,717 88356ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:34,718 88358ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:39,726 93365ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:39,727 93366ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:46,637 100276ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:46,638 100277ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:49,213 102853ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:49,214 102854ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:52,536 106175ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:52,537 106177ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:08:56,274 109914ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:08:56,275 109915ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:09:00,407 114047ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:09:00,408 114048ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:09:03,385 117025ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:09:03,386 117026ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:09:05,437 119077ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:09:05,437 119077ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:09:08,035 121674ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:09:08,036 121675ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:10:16,511   723ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 12:10:34,756 18968ms HomeController         Index              - Application started
+INFO  2021-01-12 12:10:59,398 43610ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:10:59,402 43614ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:11:02,239 46450ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:11:02,243 46454ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:11:04,049 48260ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:11:04,051 48262ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:11:07,587 51798ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:11:07,588 51799ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:11:10,740 54951ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:11:10,741 54952ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:11:13,864 58075ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:11:13,865 58077ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:11:15,263 59474ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:11:15,264 59475ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:11:16,684 60895ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:11:16,685 60896ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:11:17,777 61988ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:11:17,778 61989ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:12:11,669   779ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 12:12:24,752 13861ms HomeController         Index              - Application started
+INFO  2021-01-12 12:12:37,456 26565ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:12:37,462 26571ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:12:45,139 34248ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:12:45,141 34250ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:12:47,628 36737ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:12:47,629 36738ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:12:58,608 47717ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:12:58,609 47718ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:13:01,999 51108ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:13:02,000 51109ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:13:12,241 61351ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:13:12,242 61352ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:14:12,250 121359ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:14:12,251 121360ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:14:41,725 150835ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:14:41,726 150836ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:14:58,345 167454ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:14:58,346 167455ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:15:02,146 171255ms HomeController         Product            - Searching of products
+INFO  2021-01-12 12:15:02,147 171256ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 12:15:11,095 180204ms HomeController         Logout             - Logout done
+INFO  2021-01-12 12:15:11,104 180214ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 12:15:20,367 189476ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 13:22:11,188   487ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 13:22:23,613 12912ms HomeController         Index              - Application started
+INFO  2021-01-12 13:22:28,111 17410ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:22:28,115 17414ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:23:15,848 65147ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:23:15,849 65148ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:23:30,143 79442ms HomeController         Index              - Application started
+INFO  2021-01-12 13:23:33,452 82751ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:23:33,453 82752ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:24:25,869   704ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 13:24:37,644 12479ms HomeController         Index              - Application started
+INFO  2021-01-12 13:24:39,470 14306ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:24:39,475 14310ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:24:49,239 24074ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:24:49,241 24076ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:24:56,421 31256ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:24:56,422 31257ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:25:36,582 71418ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:25:36,584 71420ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:26:14,724 109560ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:26:14,725 109561ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:26:27,691 122526ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:26:27,692 122527ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:26:35,038 129873ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:26:35,039 129874ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:27:38,274   716ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 13:27:53,094 15536ms HomeController         Index              - Application started
+INFO  2021-01-12 13:27:54,973 17415ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:27:54,978 17420ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:28:27,557 49999ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:28:27,559 50001ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:29:07,646 90088ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:29:07,647 90089ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:29:27,963 110405ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:29:27,964 110406ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:31:56,390 258832ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:31:56,391 258833ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:38:29,233  1355ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 13:38:45,940 18062ms HomeController         Index              - Application started
+INFO  2021-01-12 13:40:32,005 124127ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:40:32,010 124132ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:47:10,002  1297ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 13:47:21,012 12307ms HomeController         Index              - Application started
+INFO  2021-01-12 13:47:22,893 14188ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:47:22,898 14193ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:51:59,979  1192ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 13:52:12,195 13408ms HomeController         Index              - Application started
+INFO  2021-01-12 13:52:14,135 15347ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:52:14,139 15351ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:54:33,538  1323ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 13:54:46,842 14627ms HomeController         Index              - Application started
+INFO  2021-01-12 13:54:49,728 17513ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:54:49,733 17518ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:55:58,237  1354ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 13:56:09,566 12683ms HomeController         Index              - Application started
+INFO  2021-01-12 13:56:11,412 14529ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:56:11,416 14533ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:56:32,628 35744ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:56:32,629 35745ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:57:16,424 79541ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:57:16,425 79542ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 13:57:26,512 89629ms HomeController         Product            - Searching of products
+INFO  2021-01-12 13:57:26,513 89630ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 15:31:57,349   550ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 15:32:08,577 11778ms HomeController         Index              - Application started
+INFO  2021-01-12 15:34:18,178 141379ms HomeController         Index              - Application started
+INFO  2021-01-12 15:35:50,993 234194ms HomeController         Index              - Application started
+INFO  2021-01-12 15:36:52,943 296144ms HomeController         Index              - Application started
+INFO  2021-01-12 15:36:54,811 298012ms HomeController         Index              - Application started
+INFO  2021-01-12 15:37:13,454 316656ms HomeController         Index              - Application started
+INFO  2021-01-12 15:38:03,252 366454ms HomeController         Index              - Application started
+INFO  2021-01-12 15:50:01,622 1084823ms HomeController         Index              - Application started
+INFO  2021-01-12 15:50:42,402 1125603ms HomeController         Index              - Application started
+INFO  2021-01-12 15:50:57,757 1140958ms HomeController         Index              - Application started
+INFO  2021-01-12 15:51:17,240 1160441ms HomeController         Index              - Application started
+INFO  2021-01-12 15:51:35,688 1178889ms HomeController         Index              - Application started
+INFO  2021-01-12 15:51:56,061 1199263ms HomeController         Product            - Searching of products
+INFO  2021-01-12 15:51:56,064 1199266ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 15:52:04,710 1207912ms HomeController         Product            - Searching of products
+INFO  2021-01-12 15:52:04,711 1207913ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 15:53:59,723 1322924ms HomeController         Product            - Searching of products
+INFO  2021-01-12 15:53:59,723 1322924ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 15:54:07,413 1330614ms HomeController         Product            - Searching of products
+INFO  2021-01-12 15:54:07,414 1330615ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 15:56:53,139  2652ms HomeController         Login              - Login Page Started
+INFO  2021-01-12 15:57:01,248 10762ms HomeController         Index              - Application started
+INFO  2021-01-12 15:57:06,139 15653ms HomeController         Product            - Searching of products
+INFO  2021-01-12 15:57:06,141 15655ms HomeController         Product            - Sorting of products
+INFO  2021-01-12 15:57:08,107 17621ms HomeController         Index              - Application started
+INFO  2021-01-12 15:57:12,400 21914ms HomeController         Logout             - Logout done
+INFO  2021-01-12 15:57:12,405 21919ms HomeController         Login              - Login Page Started

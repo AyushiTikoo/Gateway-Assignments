@@ -1,0 +1,124 @@
+﻿@model PagedList.IPagedList<MVCAssignment.Models.Product>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Product";
+}
+
+
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Product Management</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>@Html.ActionLink("Product List", "Product", "Home")</li>
+            <li>@Html.ActionLink("Add Product", "Create", "Home")</li>
+            <li>@Html.ActionLink("Index", "Index", "Home")</li>
+            <li class="active">
+                @{
+                    using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        <a href="javascript:document.getElementById('logoutForm').submit()"><h4 style="margin-top:15px;margin-bottom:15px;"><span class="glyphicon glyphicon-log-out"></span>LOGOUT</h4></a>
+                    }
+                }
+            </li>
+        </ul>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+            </ul>
+        </div>
+    </div>
+</div>
+<h2><b>Product List</b></h2>
+@Html.Raw(TempData["CreateMessage"])
+@Html.Raw(TempData["UpdateMessage"])
+@Html.Raw(TempData["DeleteMessage"])
+<br />
+@using (Html.BeginForm("Product", "Home", FormMethod.Get))
+{
+    <div>
+        <b>SEARCH BY-:</b>     Category Name @Html.TextBox("CategoryName", ViewBag.currentFilter1 as string)
+        Product Name @Html.TextBox("ProductName", ViewBag.currentFilter2 as string)
+        Price @Html.TextBox("Price", ViewBag.currentFilter3 as string)
+
+        <input id="Submit1" type="submit" value="Filter" />
+    </div>
+    <br />
+}
+@using (Html.BeginForm("Product", "Home", FormMethod.Post))
+{
+    <button type="submit" value="Delete" class="btn btn-sm btn-danger rounded-0" onclick="return confirm('Are you sure?')"><i class="fa fa-trash-o"></i> Delete Selected</button>
+    <br />
+    <br />
+    <table class="table" id="DataTable">
+        <tr>
+            <th>
+                Select
+            </th>
+            <th>
+                @Html.ActionLink("Category Name", "Product",
+         new { sortOrder = "CategoryName", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Product Name", "Product",
+         new { sortOrder = "ProductName", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Price", "Product",
+         new { sortOrder = "Price", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Product Image
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+    <tr>
+        <td>
+            <input type="checkbox" name="ID" value="@item.id" class="custom-checkbox chkCheckBoxId" />
+            
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.CategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            <img src="@Url.Content(item.ImagePath)" height="80" width="80" />
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id })
+        </td>
+    </tr>
+        }
+
+    </table>
+    <br />
+}
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Product",
+        new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+

@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<html>
+<body>
+    @if (Session["UserID"] != null)
+    {
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Product Management</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Product List", "Product", "Home")</li>
+                    <li>@Html.ActionLink("Add Product", "Create", "Home")</li>
+                    <li>@Html.ActionLink("Index", "Index", "Home")</li>
+                    <li class="active">
+                        @{
+                            using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
+                            {
+                                <a href="javascript:document.getElementById('logoutForm').submit()"><h4 style="margin-top:15px;margin-bottom:15px;"><span class="glyphicon glyphicon-log-out"></span>LOGOUT</h4></a>
+                            }
+                        }
+                    </li>
+                </ul>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <fieldset style="max-width: 600px; margin: auto;">
+                    <text>
+                        <h1><b style="margin-left:170px;margin-right:170px;">Welcome </b></h1>
+                        <h1><b>@Session["EmailID"].ToString()</b></h1><br />
+                    </text>
+                </fieldset>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    }
+    else
+    {
+        Response.Redirect(Url.Action("Login", "User"));
+    }
+
+</body>
+</html>
+
+
+

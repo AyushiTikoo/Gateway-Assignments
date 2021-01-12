@@ -1,0 +1,139 @@
+﻿@model MVCAssignment.Models.Product
+
+@{
+    ViewBag.Title = "Edit";
+}
+@if (Session["UserID"] != null)
+{
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Product Management</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Product List", "Product", "Home")</li>
+                <li>@Html.ActionLink("Add Product", "Create", "Home")</li>
+                <li>@Html.ActionLink("Index", "Index", "Home")</li>
+                <li class="active">
+                    @{
+                        using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
+                        {
+                            <a href="javascript:document.getElementById('logoutForm').submit()"><h4 style="margin-top:15px;margin-bottom:15px;"><span class="glyphicon glyphicon-log-out"></span>LOGOUT</h4></a>
+                        }
+                    }
+                </li>
+            </ul>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h2><b>Edit Product</b></h2>
+    @Html.Raw(TempData["UpdateMessage"])
+    @Html.Raw(TempData["SizeMessage"])
+    @Html.Raw(TempData["ExtensionMessage"])
+
+    using (Html.BeginForm("Edit", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.id)
+
+            <div class="form-group">
+                <label class="control-label col-md-2">
+                    Category
+                </label>
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.CategoryId, ViewBag.CategoryList as SelectList, "--Select Category--", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.CategoryId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ImagePath, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <img src="@Url.Content(Session["Image"].ToString())" height="80" width="80" />
+                    <br />
+                    <input type="file" name="ImageFile" />
+                </div>
+            </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LDescription, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.LDescription, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LDescription, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LImagePath, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <img src="@Url.Content(Session["LImage"].ToString())" height="80" width="80" />
+                <br />
+                <input type="file" name="LImageFile" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Product")
+    </div>
+}
+else
+{
+    Response.Redirect(Url.Action("Login", "User"));
+}
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
