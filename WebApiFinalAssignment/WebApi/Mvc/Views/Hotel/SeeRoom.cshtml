@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Mvc.Models.mvcRoomModel>
+
+@{
+    ViewBag.Title = "SeeRoom";
+}
+
+<h2>SeeRoom</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Hotel City
+        </th>
+        <th>
+            Hotel PinCode
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoomName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoomCategory1.RoomCategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoomPrice)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Hotel.City)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Hotel.Pincode)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RoomName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RoomCategory1.RoomCategoryName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RoomPrice)
+    </td>
+    <td>
+        @Html.ActionLink("Book Room", "BookRoom", new { id = item.RoomId })
+    </td>
+</tr>
+}
+
+</table>

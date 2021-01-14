@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "f6b23887-47d1-4bbb-aa9a-d2587ab30049",
+		"name": "Hotel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44339/api/Hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"HotelName\": \"Blueberry\",\r\n        \"Address\": \"Patel Nagar\",\r\n        \"City\": \" New Delhi\",\r\n        \"Pincode\": \"110067\",\r\n        \"ContactNumber\": \"8726374897\",\r\n        \"ContactPerson\": \"Ayushi\",\r\n        \"Website\": \"www.Blueberry.com\",\r\n        \"Facebook\": \"www.facebook/Blueberry.com\",\r\n        \"Twitter\": \"www.twitter/Blueberry.com\",\r\n        \"IsActive\": \"true\"\r\n    }\r\n\r\n\r\n"
+				},
+				"url": {
+					"raw": "https://localhost:44339/api/Hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44339",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				},
+				"description": "Posting hotels with details of hotel"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44339/api/Room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 6,\r\n    \"RoomName\": \"room6\",\r\n    \"RoomCategory\": 3,\r\n    \"RoomPrice\": \"800\",\r\n    \"IsActive\" : \"true\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44339/api/Room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44339",
+					"path": [
+						"api",
+						"Room"
+					]
+				},
+				"description": "Posting rooms in each hotel with different price and\r\ndifferent category."
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44339/api/Hotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44339/api/Hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44339",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				},
+				"description": " GET all hotels sort by alphabetic order"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44339/api/Room/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44339/api/Room/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44339",
+					"path": [
+						"api",
+						"Room",
+						"5"
+					]
+				},
+				"description": "GET all rooms of hotels"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44339/api/Booking",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BookingDate\":\"10-11-2021\",\r\n    \"RoomId\": 1,\r\n    \"StatusOfBooking\": 1\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44339/api/Booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44339",
+					"path": [
+						"api",
+						"Booking"
+					]
+				},
+				"description": " POST Booked the room of hotel for particular date"
+			},
+			"response": []
+		}
+	]
+}
