@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: "Bahnschrift";
+  font-size: medium;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.selected {
+  background-color: #7eb7d6;
+  color: white;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: all 0.3s ease 0s;
+  }
+  .sidebar a {
+    float: left;
+    transition: all 0.3s ease 0s;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+    transition: all 0.3s ease 0s;
+  }
+}

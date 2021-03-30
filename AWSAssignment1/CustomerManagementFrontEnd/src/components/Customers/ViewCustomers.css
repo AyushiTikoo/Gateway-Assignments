@@ -1,0 +1,26 @@
+.view-cust {
+  margin-left: 200px;
+  overflow: hidden;
+}
+
+.adjust {
+  margin-left: 25%;
+  margin-right: 12.5%;
+}
+
+#list-grp {
+  box-shadow: 5px 8px 12px #888888;
+}
+
+@media screen and (max-width: 400px) {
+  .view-cust {
+    margin-left: 20px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .view-cust {
+    margin-left: 0;
+  }
+}

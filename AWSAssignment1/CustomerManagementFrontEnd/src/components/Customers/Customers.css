@@ -1,0 +1,48 @@
+div.content-customer {
+  margin-left: 200px;
+  padding: 1px 16px;
+  /* height: 1000px; */
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  div.content-customer {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  div.content-customer {
+    margin-left: 20px;
+    padding: 1px 16px;
+  }
+}
+/* @media screen and (max-width: 767px) {
+  .scrollme {
+    overflow-x: auto;
+  }
+} */
+
+.but-cust {
+  width: 140px;
+  height: 40px;
+  font-family: "Bahnschrift";
+  font-size: medium;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.but-cust:hover {
+  background-color: #7eb7d6;
+  box-shadow: 0px 15px 20px;
+  color: #fff;
+  /* transform: translateY(-7px); */
+}
