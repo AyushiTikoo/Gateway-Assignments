@@ -96,7 +96,7 @@ namespace CLPM_Test
 
         private static Passenger AddPassenger()
         {
-            var passenger = new Passenger() { PassengerId = Convert.ToInt32(DateTime.Now.Ticks.ToString()), FirstName = "Meet", LastName = "Shah", PhoneNumber = "9664560601" };
+            var passenger = new Passenger() { PassengerId = Convert.ToInt32(DateTime.Now.Ticks.ToString()), FirstName = "Ayushi", LastName = "Tikoo", PhoneNumber = "8729839045" };
             return passenger;
         }
     }
