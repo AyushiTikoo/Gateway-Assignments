@@ -1,0 +1,16 @@
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\bin\Debug\net5.0\TestingAssignment2.exe
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\bin\Debug\net5.0\TestingAssignment2.deps.json
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\bin\Debug\net5.0\TestingAssignment2.runtimeconfig.json
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\bin\Debug\net5.0\TestingAssignment2.runtimeconfig.dev.json
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\bin\Debug\net5.0\TestingAssignment2.dll
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\bin\Debug\net5.0\ref\TestingAssignment2.dll
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\bin\Debug\net5.0\TestingAssignment2.pdb
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\obj\Debug\net5.0\TestingAssignment2.csprojAssemblyReference.cache
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\obj\Debug\net5.0\TestingAssignment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\obj\Debug\net5.0\TestingAssignment2.AssemblyInfoInputs.cache
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\obj\Debug\net5.0\TestingAssignment2.AssemblyInfo.cs
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\obj\Debug\net5.0\TestingAssignment2.csproj.CoreCompileInputs.cache
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\obj\Debug\net5.0\TestingAssignment2.dll
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\obj\Debug\net5.0\ref\TestingAssignment2.dll
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\obj\Debug\net5.0\TestingAssignment2.pdb
+C:\Users\ayushi.tikoo\source\repos\TestingAssignment2\TestingAssignment2\obj\Debug\net5.0\TestingAssignment2.genruntimeconfig.cache
