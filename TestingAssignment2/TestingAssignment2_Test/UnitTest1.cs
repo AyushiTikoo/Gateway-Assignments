@@ -16,7 +16,7 @@ namespace TestingAssignment2_Test
             var input = "Ayushi Tikoo";
             var expectedValue = 2;
             // Act
-            var result = Extension.WordCount(input);
+            var result = input.WordCount();
             //Assert
             Assert.Equal(expectedValue, result);
         }
@@ -28,7 +28,7 @@ namespace TestingAssignment2_Test
             var input = "354";
             var expectedValue = true;
             // Act
-            var result = Extension.NumberValidation(input);
+            var result = input.NumberValidation();
             //Assert
             Assert.Equal(expectedValue, result);
         }
@@ -40,7 +40,7 @@ namespace TestingAssignment2_Test
             var input = "AYUSHI";
             var expectedValue = "ayushi";
             // Act
-            var result = Extension.ConvertLowerCase(input);
+            var result = input.ConvertLowerCase();
             //Assert
             Assert.Equal(expectedValue, result);
         }
@@ -52,7 +52,7 @@ namespace TestingAssignment2_Test
             var input = "ayushi";
             var expectedValue = "AYUSHI";
             // Act
-            var result = Extension.ConvertUpperCase(input);
+            var result = input.ConvertUpperCase();
             //Assert
             Assert.Equal(expectedValue, result);
         }
@@ -64,7 +64,7 @@ namespace TestingAssignment2_Test
             var input = "how to do";
             var expectedValue = true;
             // Act
-            var result = Extension.CheckLowerCase(input);
+            var result = input.CheckLowerCase();
             //Assert
             Assert.Equal(expectedValue, result);
         }
@@ -76,7 +76,7 @@ namespace TestingAssignment2_Test
             var input = "AYUSHI";
             var expectedValue = true;
             // Act
-            var result = Extension.CheckUpperCase(input);
+            var result = input.CheckUpperCase();
             //Assert
             Assert.Equal(expectedValue, result);
         }
@@ -88,7 +88,7 @@ namespace TestingAssignment2_Test
             var input = "ayushi";
             var expectedValue = "Ayushi";
             // Act
-            var result = Extension.FirstUpperLetter(input);
+            var result = input.FirstUpperLetter();
             //Assert
             Assert.Equal(expectedValue, result);
         }
@@ -100,7 +100,7 @@ namespace TestingAssignment2_Test
             var input = "ayushi";
             var expectedValue = "ayush";
             // Act
-            var result = Extension.LastCharacterRemove(input);
+            var result = input.LastCharacterRemove();
             //Assert
             Assert.Equal(expectedValue, result);
         }
@@ -112,7 +112,7 @@ namespace TestingAssignment2_Test
             var input = "354";
             var expectedValue = 354;
             // Act
-            var result = Extension.StringToInt(input);
+            var result = input.StringToInt();
             //Assert
             Assert.Equal(expectedValue, result);
         }
