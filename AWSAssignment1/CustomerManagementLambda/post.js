@@ -10,9 +10,9 @@ const s3 = new AWS.S3({
   secretAccessKey: SECRET,
 });
 const con = mysql.createPool({
-  host: "database-1.cu3vqm1azutk.ap-south-1.rds.amazonaws.com",
+  host: "database-1.cu3vqm1aaazutk.ap-south-1.rds.amazonaws.com",
   user: "admin",
-  password: "palakagrawal",
+  password: "palak",
   port: "3306",
   database: "mysqldatabase_1",
 });
