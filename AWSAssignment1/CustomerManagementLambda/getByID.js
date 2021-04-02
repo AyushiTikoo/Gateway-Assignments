@@ -2,13 +2,13 @@ const mysql = require("mysql");
 
 let res;
 exports.handler = async (event, context, callback) => {
-  const con = mysql.createConnection({
-    host: "database-1.cu3vqm1azutk.ap-south-1.rds.amazonaws.com",
-    user: "admin",
-    password: "palakagrawal",
-    port: "3306",
-    database: "mysqldatabase_1",
-  });
+  const con = mysql.createPool({
+  host: "database-1.cu3vqm1aaazutk.ap-south-1.rds.amazonaws.com",
+  user: "admin",
+  password: "palak",
+  port: "3306",
+  database: "mysqldatabase_1",
+});
   let id = parseInt(event.pathParameters.id);
   let query = `select * from customers where id=${id}`;
   console.log(query);
