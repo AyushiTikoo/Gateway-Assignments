@@ -3,8 +3,8 @@ const parser = require("lambda-multipart-parser");
 
 const AWS = require("aws-sdk");
 const bcrypt = require("bcryptjs");
-const ID = "AKIAZCU5ARDMRYFVQ35D";
-const SECRET = "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";
+const ID = "***************";
+const SECRET = "*************************";
 const s3 = new AWS.S3({
   accessKeyId: ID,
   secretAccessKey: SECRET,
