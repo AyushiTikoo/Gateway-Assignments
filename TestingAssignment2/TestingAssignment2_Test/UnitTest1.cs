@@ -6,114 +6,113 @@ using Assert = Xunit.Assert;
 
 namespace TestingAssignment2_Test
 {
-    [TestClass]
     public class UnitTest1
     {
         [Fact]
         public void Test_WordCount()
         {
-            //Arrange
+            // Arrange
             var input = "Ayushi Tikoo";
             var expectedValue = 2;
             // Act
             var result = input.WordCount();
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_NumberValidation()
         {
-            //Arrange
+            // Arrange
             var input = "354";
             var expectedValue = true;
             // Act
             var result = input.NumberValidation();
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_AddLowerCase()
         {
-            //Arrange
+            // Arrange
             var input = "AYUSHI";
             var expectedValue = "ayushi";
             // Act
             var result = input.ConvertLowerCase();
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_AddUpperCase()
         {
-            //Arrange
+            // Arrange
             var input = "ayushi";
             var expectedValue = "AYUSHI";
             // Act
             var result = input.ConvertUpperCase();
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_CheckLowerCase()
         {
-            //Arrange
+            // Arrange
             var input = "how to do";
             var expectedValue = true;
             // Act
             var result = input.CheckLowerCase();
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_CheckUpperCase()
         {
-            //Arrange
+            // Arrange
             var input = "AYUSHI";
             var expectedValue = true;
             // Act
             var result = input.CheckUpperCase();
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_FirstUpperLetter()
         {
-            //Arrange
+            // Arrange
             var input = "ayushi";
             var expectedValue = "Ayushi";
             // Act
             var result = input.FirstUpperLetter();
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_LastCharacterRemove()
         {
-            //Arrange
+            // Arrange
             var input = "ayushi";
             var expectedValue = "ayush";
             // Act
             var result = input.LastCharacterRemove();
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_StringToInt()
         {
-            //Arrange
+            // Arrange
             var input = "354";
             var expectedValue = 354;
             // Act
             var result = input.StringToInt();
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
     }
