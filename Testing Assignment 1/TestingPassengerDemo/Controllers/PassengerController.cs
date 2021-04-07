@@ -32,8 +32,7 @@ namespace TestingPassengerDemo.Controllers
         public Passenger PassengerDetailsUpdate([FromBody] Passenger model)
         {
 
-            var result = _passengerManager.PassengerDetailsUpdate(model);
-            return result;
+            var result = return _passengerManager.PassengerDetailsUpdate(model);
         }
 
         [HttpDelete]
@@ -41,8 +40,7 @@ namespace TestingPassengerDemo.Controllers
         public bool PassengerDetailsDelete(String id)
         {
 
-            bool result = _passengerManager.PassengerDetailsDelete(id);
-            return result;
+            bool result = return _passengerManager.PassengerDetailsDelete(id);
         }
 
         [HttpGet]
