@@ -21,7 +21,7 @@ namespace CLPM.DAL.Repository.Classes
         {
             try
             {
-                var passenger = _dbContext.Passengers.Where(s => (PassengerId.Equals(s.PassengerId.ToString()))).FirstOrDefault();
+                var passenger = _dbContext.Passengers.Where(s => (PassengerId.Equals(s.PassengerId.ToString()))).FirstOrDefault(x=>x.passengerId==passengerId);
                 if (passenger.FirstName != null)
                 {
                     _dbContext.Passengers.Remove(passenger);
@@ -37,14 +37,12 @@ namespace CLPM.DAL.Repository.Classes
 
         public IList<Passenger> getAllPassenger()
         {
-            var entities = _dbContext.Passengers.OrderBy(c => c.FirstName).ToList();
-            return entities;
+            var entities = return _dbContext.Passengers.OrderBy(c => c.FirstName).ToList();
         }
 
         public Passenger getPassengerByPassengerId(string PassengerId)
         {
-            var passenger = _dbContext.Passengers.Where(s => (PassengerId.Equals(s.PassengerId.ToString()))).FirstOrDefault();
-            return passenger;
+            var passenger = return _dbContext.Passengers.Where(s => (PassengerId.Equals(s.PassengerId.ToString()))).FirstOrDefault(x=>x.passengerId==passengerId);
         }
 
         public Passenger PassengerRegistration(Passenger model)
@@ -60,7 +58,7 @@ namespace CLPM.DAL.Repository.Classes
         public Passenger PassengerDetailsUpdate(Passenger model)
         {
 
-            Passenger passenger = _dbContext.Passengers.Where(s => (model.Equals(s.PassengerId.ToString()))).FirstOrDefault();
+            Passenger passenger = _dbContext.Passengers.Where(s => (model.Equals(s.PassengerId.ToString()))).FirstOrDefault(x=>x.passengerId==passengerId);
             _dbContext.Passengers.Attach(model);
             _dbContext.SaveChanges();
             return model;
