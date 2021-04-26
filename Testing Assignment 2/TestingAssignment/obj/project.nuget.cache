@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "d/fziRwvKSFtVv31EGReiC5cFr/07sUeg//N13fw+bRugGks9+PuXk1bwD+a9JHw0keWjwuDpIKP0Wqz3L5Icw==",
+  "success": true,
+  "projectFilePath": "E:\\Testing\\Testing Assignment 2\\TestingAssignment\\TestingAssignment.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ayushi\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\Ayushi\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\Ayushi\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\Ayushi\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\Ayushi\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\Ayushi\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\Ayushi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Testing\\Testing Assignment 2\\TestingAssignment_Test\\TestingAssignment_Test.csproj": {}
+  },
+  "projects": {
+    "E:\\Testing\\Testing Assignment 2\\TestingAssignment\\TestingAssignment.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Testing\\Testing Assignment 2\\TestingAssignment\\TestingAssignment.csproj",
+        "projectName": "TestingAssignment",
+        "projectPath": "E:\\Testing\\Testing Assignment 2\\TestingAssignment\\TestingAssignment.csproj",
+        "packagesPath": "C:\\Users\\Ayushi\\.nuget\\packages\\",
+        "outputPath": "E:\\Testing\\Testing Assignment 2\\TestingAssignment\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ayushi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Testing\\Testing Assignment 2\\TestingAssignment_Test\\TestingAssignment_Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Testing\\Testing Assignment 2\\TestingAssignment_Test\\TestingAssignment_Test.csproj",
+        "projectName": "TestingAssignment_Test",
+        "projectPath": "E:\\Testing\\Testing Assignment 2\\TestingAssignment_Test\\TestingAssignment_Test.csproj",
+        "packagesPath": "C:\\Users\\Ayushi\\.nuget\\packages\\",
+        "outputPath": "E:\\Testing\\Testing Assignment 2\\TestingAssignment_Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ayushi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {
+              "E:\\Testing\\Testing Assignment 2\\TestingAssignment\\TestingAssignment.csproj": {
+                "projectPath": "E:\\Testing\\Testing Assignment 2\\TestingAssignment\\TestingAssignment.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
